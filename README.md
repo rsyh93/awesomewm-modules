@@ -1,1 +1,1 @@
-Awesome wm modules (awesome v3.4.15)
+Awesome wm modules (awesome v3.5.6)
