@@ -13,8 +13,6 @@ local ipairs = ipairs
 local tag = require("awful.tag")
 
 -- Multi-Column layout module for awful
-module("rsyh93.layout.column")
-
 local column = {}
 
 local function single_column(t, area)
@@ -69,7 +67,8 @@ end
 
 --- Multi-Column layout.
 -- @param screen The screen to arrange.
-name = "column"
-function arrange(p)
+column.name = "column"
+function column.arrange(p)
     return fcolumn(p)
 end
+return column

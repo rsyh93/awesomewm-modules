@@ -10,8 +10,6 @@ local ipairs = ipairs
 local tag = require("awful.tag")
 
 -- Three-column center focused layout
-module("rsyh93.layout.centerpiece")
-
 local column = {}
 
 -- right-skewed .25 - .50 - .25
@@ -50,7 +48,9 @@ end
 
 --- Multi-Column layout.
 -- @param screen The screen to arrange.
-name = "centerpiece"
-function arrange(p)
+column.name = "centerpiece"
+function column.arrange(p)
     return fcenterpiece(p)
 end
+
+return column
