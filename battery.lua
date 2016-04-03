@@ -19,6 +19,7 @@ function battery.update()
 end
 
 battery.widget = wibox.widget.textbox()
+battery.widget:set_text("Bat: ")
 battery.timer = timer({timeout=5})
 battery.timer:connect_signal("timeout", battery.update)
 
